@@ -40,7 +40,7 @@ def takecommand():
     r = sr.Recognizer() #
     with sr.Microphone() as source:
         print("Listening...")
-        r.pause_threshold = 0.5 #
+        r.pause_threshold = 0.5 
         audio = r.listen(source)
         
     try:
@@ -83,9 +83,6 @@ if __name__ == "__main__":
             
         if "let's practice some cp" in query:
             webbrowser.open("www.codechef.com")
-              
-        if "girlfriend" in query:
-            speak("I'm sorry sir but please be realistic, i'm not the marvel comic jarvis. I'm the shit that you made last night by just copying the code from codewithharry. So i can't do that's not possible")
             
         if "play music" in query:
             music_dir = "D:\\Programming\\PYTHON\\JARVIS"
